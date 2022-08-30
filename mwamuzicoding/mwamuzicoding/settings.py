@@ -98,17 +98,19 @@ DATABASES = {
     }
 }
 
-"""
-
 if DEBUG:
     DATABASES = {
         'default': {
         'ENGINE': os.getenv('SQLITE3_ENGINE'),
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': BASE_DIR / 'dbase.sqlite3',
     }
 }
 else:
-    DATABASES = {
+ 
+"""
+   
+
+DATABASES = {
     'default': {
         #'ENGINE': #'django.db.backends.mysql,
         'ENGINE': os.getenv('POSTGRES_ENGINE'),
