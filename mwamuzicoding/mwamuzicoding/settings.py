@@ -90,7 +90,7 @@ WSGI_APPLICATION = 'mwamuzicoding.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -98,8 +98,8 @@ DATABASES = {
     }
 }
 
-
 """
+
 if DEBUG:
     DATABASES = {
         'default': {
@@ -120,7 +120,7 @@ else:
         #'PORT' : '33060',
     }
 }
-"""
+
 
 
 # Password validation

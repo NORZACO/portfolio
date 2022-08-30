@@ -14,6 +14,6 @@ def homepage(request):
 
 def detailspage(request, job_id):
     job_details = get_object_or_404(Job, pk=job_id)
-    return render(request, 'betaleapp/details.html', {
+    return render(request, 'bloge/details.html', {
         'job' : job_details
     })
